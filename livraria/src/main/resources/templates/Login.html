@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Cadastro de titulo</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <a class="navbar-brand"  href="#"><img id="logo" alt="hamurabi" src="/images/hamurabi-livraria.png"/></a>
+    </div>
+
+  
+  </div>
+  
+</nav>
+
+<br/>
+<br/>
+        <div class="container">
+          <div class="panel panel-primary">
+          
+  <div class="panel-heading">
+    <h3 class="panel-title">Cadastro de produtos</h3>
+  </div>
+  <div class="panel-body">
+  
+  <form action="/produtos" method="POST">
+  
+  <div class="form-group">
+      <label for="select" class="focusedInput">Tipo</label>
+      <div>
+        <select class="form-control" id="select" name="tipo">
+          <option value="LIVRO">Livro</option>
+          <option value="CD">Cd</option>
+          <option value="DVD">Dvd</option>
+          <option value="VINIL">Vinil</option>
+          <option value="HQ">Hq</option>
+        </select>
+       
+        </div>
+  </div>
+  
+  <div class="form-group">
+      <label for="select" class="focusedInput">Estado</label>
+      <div>
+        <select class="form-control" id="select" name="estado">
+          <option value="NOVO">Novo</option>
+          <option value="USADO">Usado</option>
+
+        </select>
+        
+        </div>
+  </div>
+  
+  
+  <div class="form-group">
+  <label class="control-label" for="focusedInput">Autor</label>
+  <input class="form-control" id="focusedInput" type="text" name="autor"/>
+</div>
+
+ <div class="form-group">
+  <label class="control-label" for="focusedInput">Titulor</label>
+  <input class="form-control" id="focusedInput" type="text" name="nome"/>
+</div>
+
+ 
+
+ <div class="form-group">
+  <label class="control-label" for="focusedInput">Valor</label>
+  <input class="form-control" id="focusedInput" type="text" name="valor"/>
+</div>
+
+
+<button type="submit" class="btn btn-primary">Salvar</button>
+				
+
+
+  </form>
+  
+    </div>
+</div>
+          
+</div>
+
+
+	<script src="/js/jquery-3.1.1.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
